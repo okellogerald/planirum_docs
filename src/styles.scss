@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Gopher-Mono";
+  src: url("./assets/fonts/GopherMono-Regular.ttf");
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
