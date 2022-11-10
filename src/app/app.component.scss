@@ -31,8 +31,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #002e63;
-  color: white;
+  background-color: colors.$primary;
+  color: colors.$on-primary;
   font-weight: 600;
 }
 
@@ -47,15 +47,20 @@ h2 {
 }
 
 .link {
-  color: whitesmoke;
+  color: colors.$on-primary;
   margin-right: 20px;
   font-size: 14px;
   text-decoration: none;
+  &:hover {
+    color: colors.$on-primary;
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
 .body {
   flex-grow: 1;
-  background-color: whitesmoke;
+  background-color: colors.$background;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -77,9 +82,10 @@ h2 {
 
 .content_item a {
   text-decoration: none;
-  color: black;
+  color: colors.$on-background;
   &:hover {
-    color: colors.$primary-color;
+    color: colors.$primary;
     font-weight: bold;
+    font-style: italic;
   }
 }
